@@ -27,7 +27,7 @@ function library:console(func)
     func(("\n"):rep(57))
 end
 
-library.signal = https://raw.githubusercontent.com/elliblu/Integrated/main/signal.lua
+library.signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/elliblu/Integrated/main/signal.lua'))()
 
 local local_player = game:GetService("Players").LocalPlayer
 local mouse = local_player:GetMouse()
